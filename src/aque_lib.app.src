@@ -1,0 +1,12 @@
+{application, aque_lib, [
+    {description, "Aque lib"},
+    {vsn, "0.1.0"},
+    {id, "git"},
+    {modules, []},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto
+    ]}
+]}.
