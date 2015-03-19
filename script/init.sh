@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ulimit -SHn 1024000
+
+NODENAME="aque"
+COOKIE="aque_cookie"
+APP_MOD="aque_app"
+POLL=true
+SMP=enable
+ROOT=`pwd`/../
+ERL_MAX_PROCESSES=10240000
+ERL_MAX_ETS_TABLES=102400
+ERL_MAX_PORTS=102400
+
+export ERL_MAX_PROCESSES
+export ERL_MAX_ETS_TABLES
+export ERL_MAX_PORTS
+
+cd $ROOT
+
